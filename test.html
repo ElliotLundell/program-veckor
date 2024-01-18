@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stockarna holm</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Scroll</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            height: 500px; /* Just for demonstration */
+            border: 1px solid #ddd;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#" onclick="scrollToSection('section1')">Section 1</a>
+    <a href="#" onclick="scrollToSection('section2')">Section 2</a>
+    <a href="#" onclick="scrollToSection('section3')">Section 3</a>
+</div>
+
+<div class="content">
+    <div id="section1" class="section">Section 1 Content</div>
+    <div id="section2" class="section">Section 2 Content</div>
+    <div id="section3" class="section">Section 3 Content</div>
+</div>
+
+<script>
+    function scrollToSection(sectionId) {
+        var element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
+
+</body>
+</html>
+
+  
+</body>
+</html>
